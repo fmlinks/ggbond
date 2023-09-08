@@ -1,0 +1,5 @@
+setup.py
+ggbond.egg-info/PKG-INFO
+ggbond.egg-info/SOURCES.txt
+ggbond.egg-info/dependency_links.txt
+ggbond.egg-info/top_level.txt
