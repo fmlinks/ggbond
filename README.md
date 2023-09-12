@@ -1,2 +1,2 @@
 # ggbond
-medical image segmentation
+vessel image segmentation
