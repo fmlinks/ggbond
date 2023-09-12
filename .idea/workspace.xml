@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f76599e1-20cc-463c-a068-01eb1eafb9dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/code/segmentation/MSCDA/test/test_MSCDA_3D.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/tools/format_transfer/nii2npz.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/tools/visualize/npy_2D.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/tools/visualize/npy_2D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prompt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prompt.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +47,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.nii2npz">
+  <component name="RunManager" selected="Python.npy_3D">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="ggbond" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -106,7 +104,7 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/tools/format_transfer/nii2npz.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -125,7 +123,7 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/tools/visualize/npy_2D.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -178,7 +176,7 @@
       <updated>1694182503333</updated>
       <workItem from="1694182504359" duration="2403000" />
       <workItem from="1694189674315" duration="2875000" />
-      <workItem from="1694427963171" duration="7593000" />
+      <workItem from="1694427963171" duration="9914000" />
     </task>
     <servers />
   </component>

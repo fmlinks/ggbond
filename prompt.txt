@@ -1,3 +1,4 @@
+cd
 git add .
 git commit -m "add new files"
 git push origin main
