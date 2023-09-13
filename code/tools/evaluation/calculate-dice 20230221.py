@@ -1,11 +1,16 @@
 import nibabel as nib
-from sklearn.metrics import precision_score, recall_score, f1_score
+# from sklearn.metrics import precision_score, recall_score, f1_score
 import numpy as np
 import os
-import keras.backend as K
-import tensorflow as tf
-import math
-from scipy.ndimage import zoom
+# import keras.backend as K
+# import tensorflow as tf
+# import math
+# from scipy.ndimage import zoom
+
+import sys
+
+epsilon = sys.float_info.epsilon
+print(epsilon)
 
 def cal_base(y_true, y_pred):
     TP = np.sum(y_pred * y_true)
@@ -17,38 +22,38 @@ def cal_base(y_true, y_pred):
 
 def acc(y_true, y_pred):
     TP, TN, FP, FN = cal_base(y_true, y_pred)
-    ACC = (TP + TN) / (TP + FP + FN + TN + K.epsilon())
+    ACC = (TP + TN) / (TP + FP + FN + TN + epsilon)
     return ACC
 
 
 def dice(y_true, y_pred):
     TP, TN, FP, FN = cal_base(y_true, y_pred)
-    dice = ((2 * TP) + K.epsilon()) / (2 * TP + FP + FN + K.epsilon())
+    dice = ((2 * TP) + epsilon) / (2 * TP + FP + FN + epsilon)
     return dice
 
 
 def sensitivity(y_true, y_pred):
     TP, TN, FP, FN = cal_base(y_true, y_pred)
-    SE = TP / (TP + FN + K.epsilon())
+    SE = TP / (TP + FN + epsilon)
     return SE
 
 
 def precision(y_true, y_pred):
     TP, TN, FP, FN = cal_base(y_true, y_pred)
-    PC = TP / (TP + FP + K.epsilon())
+    PC = TP / (TP + FP + epsilon)
     return PC
 
 
 def specificity(y_true, y_pred):
     TP, TN, FP, FN = cal_base(y_true, y_pred)
-    SP = TN / (TN + FP + K.epsilon())
+    SP = TN / (TN + FP + epsilon)
     return SP
 
 
 def f1_socre(y_true, y_pred):
     SE = sensitivity(y_true, y_pred)
     PC = precision(y_true, y_pred)
-    F1 = 2 * SE * PC / (SE + PC + K.epsilon())
+    F1 = 2 * SE * PC / (SE + PC + epsilon)
     return F1
 
 # def MCC(y_true, y_pred):
@@ -87,29 +92,31 @@ def get_largest_cc(binary):
     return np.uint8(largest_cc * 1)
 
 
-def cal_matrix(i, methods, task):
+def cal_matrix(i, methods):
 
-    path1 = '../00GT/' + task
+    path1 = data_folder + '/00GT/'
     filename1 = os.listdir(path1)
     print(filename1[i])
 
-    path_image = '../00GT/image/'
-    imagename = os.listdir(path_image)
+    # path_image = '../00GT/image/'
+    # imagename = os.listdir(path_image)
 
-    path2 = '../'+methods+'/'+task
+    path2 = data_folder + methods+'/'
     filename2 = os.listdir(path2)
     print(filename2[i])
 
-    y_true = nib.load(path1 + filename1[i]).get_data()
+    y_true = nib.load(path1 + filename1[i]).get_fdata()
+    y_pred = nib.load(path2 + filename2[i]).get_fdata()
 
-    y_pred = nib.load(path2 + filename2[i]).get_data()
+    y_true = y_true.astype(np.float32)
+    y_pred = y_pred.astype(np.float32)
 
-    if hist_threshold:
-        y_pred_hist = nib.load(path_image + imagename[i]).get_fdata()
-        y_pred_hist[y_pred_hist < 140] = 0
-        y_pred_hist[y_pred_hist >= 140] = 1
-        y_pred = y_pred + y_pred_hist
-        y_pred[y_pred > 1] = 1
+    # if hist_threshold:
+    #     y_pred_hist = nib.load(path_image + imagename[i]).get_fdata()
+    #     y_pred_hist[y_pred_hist < 140] = 0
+    #     y_pred_hist[y_pred_hist >= 140] = 1
+    #     y_pred = y_pred + y_pred_hist
+    #     y_pred[y_pred > 1] = 1
 
     if largest_component:
         y_pred = get_largest_cc(y_pred)
@@ -133,6 +140,13 @@ def cal_matrix(i, methods, task):
 
 
 if __name__ == '__main__':
+
+    data_folder = r"D:\B\Paper\domain\table\SOTA\MRA-SMI\data/"
+
+    methods = 'FullySupervised'
+    # hist_threshold = False
+    largest_component = False
+
     accs = []
     sensitivitys = []
     precisions = []
@@ -143,14 +157,10 @@ if __name__ == '__main__':
     JACs = []
     VSs = []
 
-    task = 'vessel/'
-    methods = '03nnUNet'
-    hist_threshold = True
-    largest_component = True
 
-    for i in range(0, len(os.listdir('../00GT/' + task))):
+    for i in range(0, len(os.listdir(data_folder + '/00GT/'))):
         print(i)
-        acc1, sensitivity1, precision1, specificity1, f1_socre1, dice1, JAC1, VS1 = cal_matrix(i, methods, task)
+        acc1, sensitivity1, precision1, specificity1, f1_socre1, dice1, JAC1, VS1 = cal_matrix(i, methods)
         accs.append(acc1)
         sensitivitys.append(sensitivity1)
         precisions.append(precision1)
@@ -203,5 +213,5 @@ if __name__ == '__main__':
     print('dice: {} ± {}'.format(round(average_dice, 4), round(std_dice, 4)))
 
     # print(len(os.listdir('../00GT/' + task + '-crop/')))
-    print(task)
+    # print(task)
     print(methods)
