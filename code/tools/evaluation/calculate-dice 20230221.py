@@ -94,7 +94,7 @@ def get_largest_cc(binary):
 
 def cal_matrix(i, methods):
 
-    path1 = data_folder + '/00GT/'
+    path1 = data_folder + '/' + GT + '/'
     filename1 = os.listdir(path1)
     print(filename1[i])
 
@@ -143,7 +143,12 @@ if __name__ == '__main__':
 
     data_folder = r"D:\B\Paper\domain\table\SOTA\MRA-SMI\data/"
 
-    methods = 'FullySupervised'
+    # methods = 'FullySupervised'
+    # GT = 'label'
+
+    methods = 'noDA'
+    GT = 'label'
+
     # hist_threshold = False
     largest_component = False
 
@@ -158,7 +163,7 @@ if __name__ == '__main__':
     VSs = []
 
 
-    for i in range(0, len(os.listdir(data_folder + '/00GT/'))):
+    for i in range(0, len(os.listdir(data_folder + '/' + GT + '/'))):
         print(i)
         acc1, sensitivity1, precision1, specificity1, f1_socre1, dice1, JAC1, VS1 = cal_matrix(i, methods)
         accs.append(acc1)
