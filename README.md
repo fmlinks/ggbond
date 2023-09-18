@@ -1,2 +1,2 @@
 # ggbond
-vessel image segmentation
+ggbond
