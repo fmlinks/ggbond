@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f76599e1-20cc-463c-a068-01eb1eafb9dc" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/code/domain_adaptation/TCDA/code/network/loss/loss.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/domain_adaptation/TCDA/code/uda/UDA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/domain_adaptation/TCDA/code/uda/UDA.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/domain_adaptation/TCDA/code/uda/UDA.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,19 +34,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/lfm/code/github/ggbond",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/lfm/code/github/ggbond&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Python.swinunet_2D">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="ggbond" />
@@ -186,6 +184,9 @@
       <module name="ggbond" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/domain_adaptation/TCDA/code/network/backbone" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -231,7 +232,8 @@
       <workItem from="1694189674315" duration="2875000" />
       <workItem from="1694427963171" duration="25940000" />
       <workItem from="1694693117619" duration="6576000" />
-      <workItem from="1694772671915" duration="4049000" />
+      <workItem from="1694772671915" duration="5552000" />
+      <workItem from="1695027644875" duration="999000" />
     </task>
     <servers />
   </component>
