@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f76599e1-20cc-463c-a068-01eb1eafb9dc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/code/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/preprocessing/RGB_to_Gray.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/preprocessing/change_label_value.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/preprocessing/convert_nii_slices_to_png.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/preprocessing/data_augmentation/flip.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/preprocessing/nii_to_slices_CROWN.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/preprocessing/rename.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/tools/crop/crop_2D_SMILE.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code/tools/crop/crop_to_320x384.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/domain_adaptation/TCDA/code/uda/UDA.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/domain_adaptation/TCDA/code/uda/UDA.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +45,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/lfm/code/github/ggbond&quot;,
@@ -47,15 +57,39 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.swinunet_2D">
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+  <component name="RunManager" selected="Python.crop_to_320x384">
+    <configuration name="RGB_to_Gray" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ggbond" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\User\anaconda3\envs\monai\python.exe" />
+      <option name="SDK_NAME" value="monai" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/preprocessing" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/preprocessing/RGB_to_Gray.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="ggbond" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\User\anaconda3\envs\monai\python.exe" />
+      <option name="SDK_NAME" value="monai" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
@@ -70,20 +104,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="calculate-dice 20230221" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="ggbond" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/tools/evaluation" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_HOME" value="C:\Users\User\anaconda3\envs\monai\python.exe" />
+      <option name="SDK_NAME" value="monai" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/tools/evaluation/calculate-dice 20230221.py" />
+      <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -92,20 +127,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="crop_SMI" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="change_label_value" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ggbond" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/tools/crop" />
+      <option name="SDK_HOME" value="C:\Users\User\anaconda3\envs\monai\python.exe" />
+      <option name="SDK_NAME" value="monai" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/preprocessing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/tools/crop/crop_SMI.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/preprocessing/change_label_value.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -114,20 +150,44 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="find_crop_coordinates" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="crop_to_320x384" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ggbond" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
+      <option name="SDK_HOME" value="C:\Users\User\anaconda3\envs\monai\python.exe" />
+      <option name="SDK_NAME" value="monai" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/tools/crop" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/tools/crop/find_crop_coordinates.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/tools/crop/crop_to_320x384.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ggbond" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\User\anaconda3\envs\monai\python.exe" />
+      <option name="SDK_NAME" value="monai" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -158,42 +218,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="nii2npz" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="rename" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ggbond" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/tools/format_transfer" />
+      <option name="SDK_HOME" value="C:\Users\User\anaconda3\envs\monai\python.exe" />
+      <option name="SDK_NAME" value="monai" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/preprocessing" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/tools/format_transfer/nii2npz.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="swinunet_2D" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ggbond" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/domain_adaptation/TCDA/code/network/backbone" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/domain_adaptation/TCDA/code/network/backbone/swinunet_2D.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/preprocessing/rename.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -203,20 +242,21 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.Unnamed" />
       <item itemvalue="Python.main" />
-      <item itemvalue="Python.swinunet_2D" />
-      <item itemvalue="Python.calculate-dice 20230221" />
-      <item itemvalue="Python.crop_SMI" />
-      <item itemvalue="Python.find_crop_coordinates" />
-      <item itemvalue="Python.nii2npz" />
+      <item itemvalue="Python.RGB_to_Gray" />
+      <item itemvalue="Python.change_label_value" />
+      <item itemvalue="Python.crop_to_320x384" />
+      <item itemvalue="Python.rename" />
+      <item itemvalue="Python.main (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.swinunet_2D" />
-        <item itemvalue="Python.calculate-dice 20230221" />
-        <item itemvalue="Python.crop_SMI" />
-        <item itemvalue="Python.find_crop_coordinates" />
-        <item itemvalue="Python.nii2npz" />
+        <item itemvalue="Python.crop_to_320x384" />
+        <item itemvalue="Python.RGB_to_Gray" />
+        <item itemvalue="Python.rename" />
+        <item itemvalue="Python.main (1)" />
+        <item itemvalue="Python.change_label_value" />
       </list>
     </recent_temporary>
   </component>
@@ -233,20 +273,33 @@
       <workItem from="1694427963171" duration="25940000" />
       <workItem from="1694693117619" duration="6576000" />
       <workItem from="1694772671915" duration="5552000" />
-      <workItem from="1695027644875" duration="999000" />
+      <workItem from="1695027644875" duration="1545000" />
+      <workItem from="1695033554602" duration="12296000" />
+      <workItem from="1695128042740" duration="8324000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ggbond$calculate_dice_20230221.coverage" NAME="calculate-dice 20230221 Coverage Results" MODIFIED="1694705975082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/tools/evaluation" />
-    <SUITE FILE_PATH="coverage/ggbond$npy_3D.coverage" NAME="npy_3D Coverage Results" MODIFIED="1694190320905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/tools/visualize" />
+    <SUITE FILE_PATH="coverage/ggbond$main__1_.coverage" NAME="main (1) Coverage Results" MODIFIED="1695132094256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code" />
     <SUITE FILE_PATH="coverage/ggbond$swinunet_2D.coverage" NAME="swinunet_2D Coverage Results" MODIFIED="1694789624980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/domain_adaptation/TCDA/code/network/backbone" />
+    <SUITE FILE_PATH="coverage/ggbond$RGB_to_Gray.coverage" NAME="RGB_to_Gray Coverage Results" MODIFIED="1695139580570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/preprocessing" />
     <SUITE FILE_PATH="coverage/ggbond$nii2npz.coverage" NAME="nii2npz Coverage Results" MODIFIED="1694445365912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/tools/format_transfer" />
     <SUITE FILE_PATH="coverage/ggbond$find_crop_coordinates.coverage" NAME="find_crop_coordinates Coverage Results" MODIFIED="1694622954802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/tools/crop" />
-    <SUITE FILE_PATH="coverage/ggbond$crop_SMI.coverage" NAME="crop_SMI Coverage Results" MODIFIED="1694695154029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/tools/crop" />
+    <SUITE FILE_PATH="coverage/ggbond$crop_2D_SMILE.coverage" NAME="crop_2D_SMILE Coverage Results" MODIFIED="1695130381591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/tools/crop" />
+    <SUITE FILE_PATH="coverage/ggbond$flip.coverage" NAME="flip Coverage Results" MODIFIED="1695130805720" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/preprocessing/data_augmentation" />
     <SUITE FILE_PATH="coverage/ggbond$npy_2D.coverage" NAME="npy_2D Coverage Results" MODIFIED="1694448267429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/tools/visualize" />
+    <SUITE FILE_PATH="coverage/ggbond$change_label_value.coverage" NAME="change_label_value Coverage Results" MODIFIED="1695131098757" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/preprocessing" />
+    <SUITE FILE_PATH="coverage/ggbond$calculate_dice_20230221.coverage" NAME="calculate-dice 20230221 Coverage Results" MODIFIED="1694705975082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/tools/evaluation" />
+    <SUITE FILE_PATH="coverage/ggbond$npy_3D.coverage" NAME="npy_3D Coverage Results" MODIFIED="1694190320905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/tools/visualize" />
+    <SUITE FILE_PATH="coverage/ggbond$convert_nii_slices_to_png.coverage" NAME="convert_nii_slices_to_png Coverage Results" MODIFIED="1695036371309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/preprocessing" />
+    <SUITE FILE_PATH="coverage/ggbond$crop_SMI.coverage" NAME="crop_SMI Coverage Results" MODIFIED="1694695154029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/tools/crop" />
+    <SUITE FILE_PATH="coverage/ggbond$crop_to_320x384.coverage" NAME="crop_to_320x384 Coverage Results" MODIFIED="1695140658785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/tools/crop" />
+    <SUITE FILE_PATH="coverage/ggbond$rename.coverage" NAME="rename Coverage Results" MODIFIED="1695134895671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/code/preprocessing" />
   </component>
 </project>
